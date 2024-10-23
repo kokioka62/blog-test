@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のブログサイト</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <h1>私のブログサイト</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#blog">ブログ記事</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>ようこそ</h2>
+            <p>私のブログサイトへようこそ。ここでは、日々の思いや経験を共有しています。</p>
+        </section>
+
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>私は[あなたの名前]です。[あなたの簡単な自己紹介を書いてください]</p>
+        </section>
+
+        <section id="blog">
+            <h2>最新の記事</h2>
+            <article>
+                <h3>記事タイトル1</h3>
+                <p>記事の要約や導入部分をここに書きます...</p>
+                <a href="#">続きを読む</a>
+            </article>
+            <article>
+                <h3>記事タイトル2</h3>
+                <p>記事の要約や導入部分をここに書きます...</p>
+                <a href="#">続きを読む</a>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form>
+                <label for="name">お名前：</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス：</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ：</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 私のブログサイト. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
