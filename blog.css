@@ -61,3 +61,35 @@ article a:hover {
     text-decoration: underline;
 }
 
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px;
+    background-color: #006400; /* ダークグリーンの背景色 */
+}
+
+#game-board div {
+    width: 50px;
+    height: 50px;
+    background-color: #228B22; /* フォレストグリーンのセル背景色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 50%;
+}
+
+#game-board div.black {
+    background-color: black;
+}
+
+#game-board div.white {
+    background-color: white;
+    border: 1px solid #ccc; /* 白石の周りに薄いグレーの境界線を追加 */
+}
+
+#game-board div.highlight {
+    background-color: #90EE90; /* ライトグリーンでハイライト */
+}
